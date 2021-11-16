@@ -2,4 +2,14 @@
     <string name="app_name">COMP2000</string>
     <string name="edit_message">Enter a Message</string>
     <string name="button_send">Send</string>
+    <string name="button">Button</string>
+    <string name="help">Help</string>
+    <string name="welcome">Welcome</string>
+    <string name="name">Name</string>
+    <string name="addressline1">AddressLine1</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="city">City</string>
+    <string name="postcode">Postcode</string>
+    <string name="have_an_account_login_here">Have an account? Login Here.</string>
 </resources>
