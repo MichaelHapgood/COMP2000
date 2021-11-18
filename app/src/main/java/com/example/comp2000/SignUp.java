@@ -38,6 +38,10 @@ public class SignUp extends AppCompatActivity {
 
     public void signUp(){
 
+        /*
+        Check to ensure fields aren't empty
+         And to prompt the user of the issue if they are empty
+        */
         Intent intent = new Intent(this, Login.class);
 
         EditText fNameEditText = findViewById(R.id.signUpFname);

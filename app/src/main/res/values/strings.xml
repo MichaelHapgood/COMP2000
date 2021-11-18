@@ -25,4 +25,7 @@
     <string name="no_account_sign_up_here">No Account? Sign Up Here?</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
+    <string name="admin_log_in">Admin Log In</string>
+    <string name="admin_email">Admin Email</string>
+    <string name="admin_password">Admin Password</string>
 </resources>

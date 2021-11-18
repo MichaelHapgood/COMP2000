@@ -18,7 +18,15 @@ public class MainActivity extends AppCompatActivity {
         homeSignUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 signUp();
+            }
+        });
+        Button homeAdminButton = findViewById(R.id.homeAdmin);
+        homeAdminButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                admin();
             }
         });
 
@@ -26,6 +34,10 @@ public class MainActivity extends AppCompatActivity {
     public void signUp (){
         Intent intents = new Intent(this, SignUp.class);
         startActivity(intents);
+    }
+    public void admin (){
+        Intent intent = new Intent(this, AdminLogin.class);
+        startActivity(intent);
     }
 
 
