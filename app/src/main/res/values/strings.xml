@@ -5,11 +5,18 @@
     <string name="button">Button</string>
     <string name="help">Help</string>
     <string name="welcome">Welcome</string>
-    <string name="name">Name</string>
-    <string name="addressline1">AddressLine1</string>
-    <string name="last_name">Last Name</string>
-    <string name="first_name">First Name</string>
-    <string name="city">City</string>
-    <string name="postcode">Postcode</string>
+    <string name="name">Name: </string>
+    <string name="address_line1">Address Line 1 </string>
+    <string name="last_name">Last Name </string>
+    <string name="first_name">First Name </string>
+    <string name="city">City </string>
+    <string name="postcode">Postcode </string>
     <string name="have_an_account_login_here">Have an account? Login Here.</string>
+    <string name="hint">hint</string>
+    <string name="submit">Submit</string>
+    <string name="make_your_bookings_here">Make Your Bookings Here!</string>
+    <string name="admin">Admin</string>
+    <string name="make_a_booking">Make a Booking</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
