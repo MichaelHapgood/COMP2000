@@ -6,4 +6,97 @@
     android:layout_height="match_parent"
     tools:context=".BookingAdmin">
 
+    <TextView
+        android:id="@+id/bookAdminTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/booking_history"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/adminBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:includeFontPadding="false"
+        android:paddingLeft="100dp"
+        android:paddingTop="10dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="10dp"
+        android:text="@string/barn"
+        android:textColorHighlight="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookAdminTitle" />
+
+    <TextView
+        android:id="@+id/adminBooking4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:includeFontPadding="false"
+        android:paddingLeft="100dp"
+        android:paddingTop="10dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="10dp"
+        android:text="@string/bedroom_1"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminBooking" />
+
+    <TextView
+        android:id="@+id/adminBooking5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:includeFontPadding="false"
+        android:paddingLeft="100dp"
+        android:paddingTop="10dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="10dp"
+        android:text="@string/bedroom_2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminBooking4" />
+
+    <TextView
+        android:id="@+id/adminBooking6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:includeFontPadding="false"
+        android:paddingLeft="100dp"
+        android:paddingTop="10dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="10dp"
+        android:text="@string/bedroom_3"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminBooking5" />
+
+    <TextView
+        android:id="@+id/adminBooking7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:includeFontPadding="false"
+        android:paddingLeft="100dp"
+        android:paddingTop="10dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="10dp"
+        android:text="@string/shepard_s_hut"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminBooking6" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

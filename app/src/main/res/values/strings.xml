@@ -28,4 +28,11 @@
     <string name="admin_log_in">Admin Log In</string>
     <string name="admin_email">Admin Email</string>
     <string name="admin_password">Admin Password</string>
+    <string name="booking_history">Booking History</string>
+    <string name="barn">Barn</string>
+    <string name="bedroom_1">Bedroom 1</string>
+    <string name="bedroom_2">Bedroom 2</string>
+    <string name="bedroom_3">Bedroom 3</string>
+    <string name="shepard_s_hut">Shepard\'s Hut</string>
+    <string name="your_booking_history">Your Booking History</string>
 </resources>

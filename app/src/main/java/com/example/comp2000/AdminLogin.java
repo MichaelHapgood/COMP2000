@@ -19,6 +19,7 @@ public class AdminLogin extends AppCompatActivity {
         adminLogInButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 adminLogin();
             }
         });
