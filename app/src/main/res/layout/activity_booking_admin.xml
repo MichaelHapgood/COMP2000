@@ -99,4 +99,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adminBooking6" />
 
+    <Button
+        android:id="@+id/bookAdminBack"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:backgroundTint="@color/button_green"
+        android:text="@string/back"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

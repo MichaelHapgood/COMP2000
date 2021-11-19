@@ -37,6 +37,19 @@ public class AccountMenu extends AppCompatActivity {
                 makeBook();
             }
         });
+
+        Button accMenuBackButton = findViewById(R.id.accMenuBack);
+        accMenuBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
+            }
+        });
+    }
+
+    public void goBack(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 
     public void editAccount(){

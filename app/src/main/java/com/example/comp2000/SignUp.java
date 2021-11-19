@@ -26,12 +26,20 @@ public class SignUp extends AppCompatActivity {
 
             }
         });
-        Button logInHere = findViewById(R.id.signUpLogIn);
-        logInHere.setOnClickListener(new View.OnClickListener() {
+        Button logInHereButton = findViewById(R.id.signUpLogIn);
+        logInHereButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 AccountExists();
+            }
+        });
+
+        Button signBackButton = findViewById(R.id.signUpBack);
+        signBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
             }
         });
     }
@@ -90,6 +98,12 @@ public class SignUp extends AppCompatActivity {
             intent.putExtra(EXTRA_MESSAGE, fName);
             AccountExists();
         }
+    }
+
+    public void goBack(){
+
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
     public void AccountExists(){
 

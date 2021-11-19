@@ -5,11 +5,14 @@
       <map>
         <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_account_menu.xml" value="0.33" />
         <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_admin_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_booking.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_booking_admin.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_booking_history.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_edit_account.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_payment.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_payment_complete.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Mike Hapgood/AndroidStudioProjects/COMP2000/app/src/main/res/layout/activity_sign_up.xml" value="0.35260416666666666" />
       </map>
     </option>

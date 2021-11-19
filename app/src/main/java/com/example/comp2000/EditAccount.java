@@ -23,6 +23,14 @@ public class EditAccount extends AppCompatActivity {
                 detailsComplete();
             }
         });
+
+        Button editBackButton = findViewById(R.id.editBack);
+        editBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
+            }
+        });
     }
 
     public void detailsComplete(){
@@ -72,6 +80,11 @@ public class EditAccount extends AppCompatActivity {
         else {
             submitChanges();
         }
+    }
+
+    public void goBack(){
+        Intent intent = new Intent(this, AccountMenu.class);
+        startActivity(intent);
     }
 
     public void submitChanges(){

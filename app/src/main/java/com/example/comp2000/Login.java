@@ -43,6 +43,14 @@ public class Login extends AppCompatActivity {
             }
         });
 
+        Button logInBackButton = findViewById(R.id.loginBack);
+        logInBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
+            }
+        });
+
     }
     public void logIn(){
 
@@ -63,6 +71,11 @@ public class Login extends AppCompatActivity {
         else{
             startActivity(intent);
         }
+    }
+
+    public void goBack(){
+        Intent intent = new Intent(this, MainActivity.class );
+        startActivity(intent);
     }
 
     public void loggedIn(){

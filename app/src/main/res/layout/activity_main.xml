@@ -44,12 +44,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/homeMakeBooking"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:backgroundTint="@color/button_green"
-        android:text="@string/make_a_booking"
+        android:text="@string/make_a_booking_as_a_guest"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/homeAdmin"
         app:layout_constraintEnd_toEndOf="parent"
@@ -64,7 +64,7 @@
         android:backgroundTint="@color/button_green"
         android:text="@string/log_in"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/homeMakeBooking"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

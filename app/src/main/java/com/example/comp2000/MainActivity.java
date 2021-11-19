@@ -34,7 +34,15 @@ public class MainActivity extends AppCompatActivity {
         homeLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 login();
+            }
+        });
+        Button homeMakeBookingButton = findViewById(R.id.homeMakeBooking);
+        homeMakeBookingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                book();
             }
         });
 
@@ -51,5 +59,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
     }
-
+    public void book(){
+        Intent intent = new Intent(this, Booking.class);
+        startActivity(intent);
+    }
 }

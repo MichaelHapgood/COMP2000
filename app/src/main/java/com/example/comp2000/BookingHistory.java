@@ -23,6 +23,14 @@ public class BookingHistory extends AppCompatActivity {
             }
         });
 
+        Button bookHistBackButton = findViewById(R.id.bookHistBack);
+        bookHistBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
+            }
+        });
+
         //Bedroom 1 button on booking history page
         Button bed1HistButton = findViewById(R.id.bookHistBed1);
         bed1HistButton.setOnClickListener(new View.OnClickListener() {
@@ -60,6 +68,10 @@ public class BookingHistory extends AppCompatActivity {
         });
     }
 
+    public void goBack(){
+        Intent intent = new Intent(this, AccountMenu.class);
+        startActivity(intent);
+    }
     public void bookHistory() {
 
         Intent intents = new Intent(this, Booking.class);

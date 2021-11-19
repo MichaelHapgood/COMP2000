@@ -23,6 +23,19 @@ public class AdminLogin extends AppCompatActivity {
                 adminLogin();
             }
         });
+
+        Button adminLoginBackButton = findViewById(R.id.adminLoginBack);
+        adminLoginBackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goBack();
+            }
+        });
+    }
+
+    public void goBack(){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
     public void adminLogin(){
 
