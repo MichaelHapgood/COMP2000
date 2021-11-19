@@ -59,6 +59,12 @@ public class SignUp extends AppCompatActivity {
         EditText postcodeEditText = findViewById(R.id.signUpPostcode);
         String postcode = postcodeEditText.getText().toString();
 
+        EditText emailEditText = findViewById(R.id.signUpEmail);
+        String email = emailEditText.getText().toString();
+
+        EditText passwordEditText = findViewById(R.id.signUpPassword);
+        String password = passwordEditText.getText().toString();
+
         if(TextUtils.isEmpty(fName)){
             fNameEditText.setError("Please Enter Your First Name");
         }
@@ -74,9 +80,15 @@ public class SignUp extends AppCompatActivity {
         else if(TextUtils.isEmpty(postcode)){
             postcodeEditText.setError("Please Enter Your Postcode");
         }
-        else{
-            intent.putExtra(EXTRA_MESSAGE,fName);
-            startActivity(intent);
+        else if(TextUtils.isEmpty(email)){
+            emailEditText.setError("Please Enter Your Email Address");
+        }
+        else if (TextUtils.isEmpty(password)) {
+            passwordEditText.setError("Please Enter Your Password");
+        }
+        else {
+            intent.putExtra(EXTRA_MESSAGE, fName);
+            AccountExists();
         }
     }
     public void AccountExists(){

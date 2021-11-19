@@ -35,4 +35,8 @@
     <string name="bedroom_3">Bedroom 3</string>
     <string name="shepard_s_hut">Shepard\'s Hut</string>
     <string name="your_booking_history">Your Booking History</string>
+    <string name="your_account">Your Account</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="edit_your_account_details">Edit Your Account Details</string>
+    <string name="submit_changes">Submit Changes</string>
 </resources>

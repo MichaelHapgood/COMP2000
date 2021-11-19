@@ -25,7 +25,7 @@
         android:id="@+id/signUpFname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/first_name"
         android:importantForAutofill="no"
@@ -40,7 +40,7 @@
         android:id="@+id/signUpLname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/last_name"
         android:importantForAutofill="no"
@@ -55,7 +55,7 @@
         android:id="@+id/signUpAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/address_line1"
         android:importantForAutofill="no"
@@ -70,7 +70,7 @@
         android:id="@+id/signUpCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/city"
         android:importantForAutofill="no"
@@ -85,7 +85,7 @@
         android:id="@+id/signUpPostcode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="@string/postcode"
         android:importantForAutofill="no"
@@ -109,4 +109,28 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/signUpLogIn" />
+
+    <EditText
+        android:id="@+id/signUpEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpPostcode" />
+
+    <EditText
+        android:id="@+id/signUpPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signUpEmail" />
 </androidx.constraintlayout.widget.ConstraintLayout>
