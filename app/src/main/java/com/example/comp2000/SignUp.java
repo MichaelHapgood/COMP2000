@@ -9,9 +9,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.util.ArrayList;
+
 public class SignUp extends AppCompatActivity {
 
     public static final String EXTRA_MESSAGE="com.example.comp2000";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,7 @@ public class SignUp extends AppCompatActivity {
                 goBack();
             }
         });
+
     }
 
     public void signUp(){
@@ -98,6 +102,7 @@ public class SignUp extends AppCompatActivity {
             intent.putExtra(EXTRA_MESSAGE, fName);
             AccountExists();
         }
+
     }
 
     public void goBack(){
@@ -111,4 +116,3 @@ public class SignUp extends AppCompatActivity {
         startActivity(intent);
     }
 }
-// Add email password boxes android/figma

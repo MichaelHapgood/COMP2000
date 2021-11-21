@@ -69,7 +69,8 @@ public class Login extends AppCompatActivity {
             passwordEditText.setError("Please Enter Your Password");
         }
         else{
-            startActivity(intent);
+
+            loggedIn();
         }
     }
 
@@ -79,7 +80,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void loggedIn(){
-        Intent intent = new Intent(this, SignUp.class );
+        Intent intent = new Intent(this, AccountMenu.class );
         startActivity(intent);
     }
 }

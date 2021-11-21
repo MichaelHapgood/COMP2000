@@ -20,7 +20,7 @@ public class Payment extends AppCompatActivity {
         payButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                pay();
+                payFormEmpty();
             }
         });
 

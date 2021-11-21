@@ -18,7 +18,7 @@ public class PaymentComplete extends AppCompatActivity {
         backToAccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                bookComplete();
             }
         });
     }
