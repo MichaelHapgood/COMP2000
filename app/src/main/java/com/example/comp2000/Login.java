@@ -1,14 +1,18 @@
 package com.example.comp2000;
 
+import static com.example.comp2000.SignUp.emails;
+import static com.example.comp2000.SignUp.passwords;
+
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
@@ -16,15 +20,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Intent intent = getIntent();
-        String fName = intent.getStringExtra(SignUp.EXTRA_MESSAGE);
-        TextView fnameView = findViewById(R.id.usernameTemp);
-        if(TextUtils.isEmpty(fName)){
-            fnameView.setText("Welcome ");
-        }
-        else{
-            fnameView.setText("Welcome " + fName);
-        }
+
         Button logInButton = findViewById(R.id.submitLogIn);
         logInButton.setOnClickListener(new View.OnClickListener() {
 
@@ -39,9 +35,10 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                loggedIn();
+                newSignUp();
             }
         });
+
 
         Button logInBackButton = findViewById(R.id.loginBack);
         logInBackButton.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +51,6 @@ public class Login extends AppCompatActivity {
     }
     public void logIn(){
 
-        Intent intent = new Intent(this, AccountMenu.class );
 
         EditText emailEditText = findViewById(R.id.logInEmail);
         String email = emailEditText.getText().toString();
@@ -69,8 +65,35 @@ public class Login extends AppCompatActivity {
             passwordEditText.setError("Please Enter Your Password");
         }
         else{
+            for(int i = 0; i < emails.size(); i++){
+                if(emails.get(i).contains(email)){
+                    if(passwords.get(i).contains(password)){
+                        Context context = getApplicationContext();
+                        CharSequence text = "Logged In";
+                        int duration = Toast.LENGTH_SHORT;
 
-            loggedIn();
+                        Toast toast = Toast.makeText(context, text, duration);
+                        toast.show();
+                        loggedIn();
+                    }
+                    else{
+                        Context context = getApplicationContext();
+                        CharSequence text = "Email or Password are incorrect!";
+                        int duration = Toast.LENGTH_SHORT;
+
+                        Toast toast = Toast.makeText(context, text, duration);
+                        toast.show();
+                    }
+                }
+                else{
+                    Context context = getApplicationContext();
+                    CharSequence text = "Email or Password are incorrect!";
+                    int duration = Toast.LENGTH_SHORT;
+
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
+                }
+            }
         }
     }
 
@@ -81,6 +104,11 @@ public class Login extends AppCompatActivity {
 
     public void loggedIn(){
         Intent intent = new Intent(this, AccountMenu.class );
+        startActivity(intent);
+    }
+
+    public void newSignUp(){
+        Intent intent = new Intent(this, SignUp.class );
         startActivity(intent);
     }
 }

@@ -2,19 +2,21 @@ package com.example.comp2000;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 public class SignUp extends AppCompatActivity {
 
-    public static final String EXTRA_MESSAGE="com.example.comp2000";
-
+    public static ArrayList<String> emails = new ArrayList<>();
+    public static ArrayList<String> passwords = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,7 +56,6 @@ public class SignUp extends AppCompatActivity {
         Check to ensure fields aren't empty
          And to prompt the user of the issue if they are empty
         */
-        Intent intent = new Intent(this, Login.class);
 
         EditText fNameEditText = findViewById(R.id.signUpFname);
         String fName = fNameEditText.getText().toString();
@@ -99,7 +100,17 @@ public class SignUp extends AppCompatActivity {
             passwordEditText.setError("Please Enter Your Password");
         }
         else {
-            intent.putExtra(EXTRA_MESSAGE, fName);
+
+            emails.add(email);
+            passwords.add(password);
+
+            Context context = getApplicationContext();
+            CharSequence text = "Account Created";
+            int duration = Toast.LENGTH_SHORT;
+
+            Toast toast = Toast.makeText(context, text, duration);
+            toast.show();
+
             AccountExists();
         }
 
@@ -111,6 +122,7 @@ public class SignUp extends AppCompatActivity {
         startActivity(intent);
     }
     public void AccountExists(){
+
 
         Intent intent = new Intent(this, Login.class);
         startActivity(intent);
